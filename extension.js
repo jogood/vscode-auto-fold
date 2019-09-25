@@ -43,7 +43,7 @@ to make this thing go.
 	current api version.
 	//*/
 
-  Debug: true,
+  Debug: false,
   /*//
 	@type Bool
 	supress debugging messages. i think console.log is slow so maybe we can
@@ -302,9 +302,9 @@ to make this thing go.
     let Iter = 0;
     let Output = 0;
     let ExtConf;
-    let ExtCurr;
 
-    if (Config.Types) {
+    if (Config.types) {
+
       for (Iter = 0; Iter < Config.types.length; Iter++) {
         if (!AutoFoldTracker.IsTypeConfigValid(Config.types[Iter])) continue;
 

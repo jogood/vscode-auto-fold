@@ -1,5 +1,28 @@
 # [![https://marketplace.visualstudio.com/items?itemName=bobmagicii.autofoldyeah](https://img.shields.io/badge/Auto%20Fold-%20Visual%20Studio%20Marketplace-007ACC.svg)](https://marketplace.visualstudio.com/items?itemName=bobmagicii.autofoldyeah) [![Contact @bobmagicii on Twitter](https://img.shields.io/twitter/url/http/bobmagicii.svg?style=social&label=@bobmagicii)](https://twitter.com/bobmagicii)
 
+
+## JoGooD's addin:
+
+Added word choice instead of single word. May add pack features later
+Add in settings.json: 'autofold.foldwords'[{"word":"myword$","pack":false}] 
+Note that word is a regex expression 
+So vscode-fold-next$ will be detected as [whatever is here, like // ]vscode-fold-next 
+
+
+Exemple:
+"autofold.foldwords": [
+        {
+            "word": "vscode-fold-next$",
+            "pack": false
+        },
+        {
+        "word":"#region$",
+        "pack": true
+        }
+    ],
+
+## Original ReadMe:
+
 This extension will automatically fold code files when you open them.
 
 Questions? Comments? Suggestions? Email bob at nether dot io or hit me up on Twitter, @bobmagicii.
